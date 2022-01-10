@@ -1,0 +1,145 @@
+.app {
+  &__page {
+    background: #2C2C2C;
+    //height: 100vh;
+    height: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media (max-width: 1130px) {
+      height: 520px;
+    }
+  }
+
+
+  &__body {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: 50px;
+    position: relative;
+    @media (max-width: 400px) {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+
+  &__wrap-banner {
+    display: flex;
+    @media (max-width: 1133px) {
+      min-width: 850px;
+    }
+
+    @media (min-width: 400px) {
+      width: 75%;
+      align-items: end;
+      flex-direction: row-reverse;
+      position: relative;
+    }
+    //@media (max-width: 1130px) {
+    //  position: absolute;
+    //  right: -150px;
+    //  bottom: 0;
+    //}
+  }
+
+
+  &__banner {
+    max-width: 1000px;
+    margin-right: 50px;
+    //border: 1px solid red;
+    @media (max-width: 1383px) {
+      position: absolute;
+      right: -200px;
+      bottom: 0;
+    }
+    @media (max-width: 1130px) {
+      max-width: 700px;
+      position: absolute;
+      right: 100px;
+      bottom: 0;
+    }
+  }
+
+  &__banner1 {
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+
+  &__banner2 {
+    max-width: 400px;
+    @media (min-width: 400px) {
+      display: none;
+    }
+  }
+
+
+  &__wrap-title {
+    min-width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 1315px) {
+      min-width: 250px;
+    }
+    @media (max-width: 1133px) {
+      min-width: 250px;
+    }
+    @media (max-width: 400px) {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    @media (min-width: 400px) {
+      position: absolute;
+      top: 170px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 58px;
+      }
+      span {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    @media (max-width: 400px) {
+      text-align: center;
+      width: 300px;
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 36px;
+      }
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        text-transform: uppercase;
+      }
+    }
+
+    @media (max-width: 1130px) {
+      top: 80px;
+    }
+
+    width: 416px;
+    height: 116px;
+    color: white;
+    font-family: Suisse Intl, sans-serif;
+    font-style: normal;
+
+  }
+
+
+}

@@ -1,0 +1,122 @@
+.header-search {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.header-search__input-container {
+  border-radius: 50px;
+  border: none;
+  width: 280px;
+  height: 44px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px 0 15px;
+}
+@media (max-width: 400px) {
+  .header-search__input-container {
+    height: 34px;
+    width: 220px;
+  }
+}
+.header-search__input {
+  border: none;
+  width: 100%;
+  height: 90%;
+  outline: none;
+}
+.header-search__input::placeholder {
+  font-family: Suisse Intl, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  opacity: 0.8;
+  height: 100%;
+  padding-top: 20px;
+  color: #5E5E5E;
+  transition: 0.3s;
+}
+.header-search__active-input::placeholder {
+  transition: 0.3s;
+  font-size: 12px;
+  transform: translateY(0px) translateY(-25%);
+}
+@media (max-width: 400px) {
+  .header-search__active-input::placeholder {
+    font-size: 10px;
+    transform: translateY(0px) translateY(-21%);
+  }
+}
+.header-search__search-button {
+  font-family: Suisse Intl, sans-serif;
+  font-size: 14px;
+  min-width: 32px;
+  height: 32px;
+  background: #FF7D5A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .header-search__search-button {
+    min-width: 28px;
+    height: 28px;
+  }
+}
+.header-search .active-butt {
+  font-style: normal;
+  min-width: 64px;
+  border-radius: 320px;
+  transition: 0.3s;
+}
+.header-search__wrap-search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 769px) {
+  .header-search__search-active {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0%);
+  }
+  .header-search__search-disabled {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-90%);
+  }
+  .header-search__search-disabled .header-search__input-container {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}
+.header-search__wrap-arrow {
+  position: absolute;
+  top: 50px;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  .header-search__wrap-arrow {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .header-search__wrap-arrow {
+    top: 47px;
+  }
+}
+.header-search__arrow-open {
+  right: 5%;
+}
+.header-search__arrow-closed {
+  right: 1.5%;
+}
+
+/*# sourceMappingURL=header.css.map */

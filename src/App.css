@@ -1,0 +1,145 @@
+.app__page {
+  background: #2C2C2C;
+  height: 720px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (max-width: 1130px) {
+  .app__page {
+    height: 520px;
+  }
+}
+.app__body {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 50px;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .app__body {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.app__wrap-banner {
+  display: flex;
+}
+@media (max-width: 1133px) {
+  .app__wrap-banner {
+    min-width: 850px;
+  }
+}
+@media (min-width: 400px) {
+  .app__wrap-banner {
+    width: 75%;
+    align-items: end;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+}
+.app__banner {
+  max-width: 1000px;
+  margin-right: 50px;
+}
+@media (max-width: 1383px) {
+  .app__banner {
+    position: absolute;
+    right: -200px;
+    bottom: 0;
+  }
+}
+@media (max-width: 1130px) {
+  .app__banner {
+    max-width: 700px;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .app__banner1 {
+    display: none;
+  }
+}
+.app__banner2 {
+  max-width: 400px;
+}
+@media (min-width: 400px) {
+  .app__banner2 {
+    display: none;
+  }
+}
+.app__wrap-title {
+  min-width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1315px) {
+  .app__wrap-title {
+    min-width: 250px;
+  }
+}
+@media (max-width: 1133px) {
+  .app__wrap-title {
+    min-width: 250px;
+  }
+}
+@media (max-width: 400px) {
+  .app__wrap-title {
+    justify-content: center;
+  }
+}
+.app__title {
+  width: 416px;
+  height: 116px;
+  color: white;
+  font-family: Suisse Intl, sans-serif;
+  font-style: normal;
+}
+@media (min-width: 400px) {
+  .app__title {
+    position: absolute;
+    top: 170px;
+  }
+  .app__title h1 {
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 58px;
+  }
+  .app__title span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 400px) {
+  .app__title {
+    text-align: center;
+    width: 300px;
+  }
+  .app__title h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .app__title span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 1130px) {
+  .app__title {
+    top: 80px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
