@@ -5,11 +5,13 @@ import {useEffect, useRef, useState} from "react";
 const HeaderSearch = () => {
   const [isShowInput, setIsShowInput] = useState(false)
   const [isActiveButt, setIsActiveButt] = useState(false)
-  const rootEl = useRef(null);
+  const rootEl = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // @ts-ignore
-    const onClick = e => rootEl.current.contains(e.target) || setIsActiveButt(false)
+    const onClick = (e: MouseEvent) =>{
+      const target = e.target as Element;
+      rootEl!.current!.contains(target) || setIsActiveButt(false)
+    }
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);
   }, []);
